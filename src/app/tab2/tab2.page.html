@@ -7,17 +7,90 @@
 </ion-header>
 
 <ion-content [fullscreen]="true">
- <ion-item>
-   <ion-col><ion-button> 1 </ion-button></ion-col>
-   <ion-col><ion-button> 3 </ion-button></ion-col>
-   <ion-col><ion-button> 6 </ion-button></ion-col>
-   <ion-col><ion-button> 9 </ion-button></ion-col>
-   <ion-col><ion-button> 12 </ion-button></ion-col>
- </ion-item>
-  <ion-item>
-    <ion-title>time 1</ion-title>
-    <ion-button>+</ion-button>
-    <ion-title>Time 2</ion-title>
-    <ion-button>+</ion-button>
-  </ion-item>
+  <ion-grid>
+    <ion-row>
+      <ion-col size=""><ion-button color="dark" expand="full">1</ion-button></ion-col>
+      <ion-col size=""><ion-button color="dark" expand="full">3</ion-button></ion-col>
+      <ion-col size=""><ion-button color="dark" expand="full">6</ion-button></ion-col>
+      <ion-col size=""><ion-button color="dark" expand="full">9</ion-button></ion-col>
+      <ion-col size=""><ion-button color="dark" expand="full">12</ion-button></ion-col>
+      
+    </ion-row>
+  </ion-grid>
+  <ion-grid>
+    <ion-row>
+    <ion-col size="6">
+      <ion-list>Time 1</ion-list>
+    </ion-col>
+    <ion-col size="6">
+      <ion-list>Time 2</ion-list>
+    </ion-col>
+    </ion-row>
+  </ion-grid> 
+    <ion-grid>
+    <ion-row>
+    <ion-col size="">
+      <ion-button color="dark">+</ion-button>
+    </ion-col>
+      <ion-col size="">
+        <ion-button color="dark">+</ion-button>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+  <ion-grid>
+    <ion-row>
+    <ion-col size="6">
+      <ion-button color="light">0</ion-button>
+    </ion-col>
+    <ion-col size="6">
+      <ion-button color="light">0</ion-button>
+    </ion-col>
+    </ion-row>
+  </ion-grid>
+  <ion-grid>
+    <ion-row>
+    <ion-col size="">
+      <ion-button color="dark">-</ion-button>
+    </ion-col>
+      <ion-col size="">
+        <ion-button color="dark">-</ion-button>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+  <ion-grid>
+    <ion-row>
+      <ion-col size="6">
+        <ion-list>Partidas</ion-list>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+  <ion-grid>
+    <ion-row>
+      <ion-col size="6">
+        <ion-list>Time 1</ion-list>
+      </ion-col>
+      <ion-col>
+        <ion-button color="light">0</ion-button>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+  <ion-grid>
+    <ion-row>
+      <ion-col size="6">
+        <ion-list>Time 2</ion-list>
+      </ion-col>
+      <ion-col>
+        <ion-button color="light">0</ion-button>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+  <ion-grid>
+    <ion-row>
+      <ion-col size="">
+        <ion-button color="dark" expand="full">Zerar</ion-button>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+
+
 </ion-content>
