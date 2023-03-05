@@ -7,14 +7,18 @@
 </ion-header>
 
 <ion-content [fullscreen]="true">
+
+  <ion-row>
+    <ion-label class="Placar">contando {{contando}}</ion-label>
+  </ion-row>
+
   <ion-grid>
-    <ion-row>
-      <ion-col size=""><ion-button color="dark" expand="full">1</ion-button></ion-col>
-      <ion-col size=""><ion-button color="dark" expand="full">3</ion-button></ion-col>
-      <ion-col size=""><ion-button color="dark" expand="full">6</ion-button></ion-col>
-      <ion-col size=""><ion-button color="dark" expand="full">9</ion-button></ion-col>
-      <ion-col size=""><ion-button color="dark" expand="full">12</ion-button></ion-col>
-      
+    <ion-row> 
+      <ion-col><ion-button (click)="somarum()" color="dark" expand="full">1</ion-button></ion-col>
+      <ion-col><ion-button (click)="somartres()" color="dark" expand="full">3</ion-button></ion-col>
+      <ion-col><ion-button (click)="somarseis()" color="dark" expand="full">6</ion-button></ion-col>
+      <ion-col><ion-button (click)="somarnove()" color="dark" expand="full">9</ion-button></ion-col>
+      <ion-col><ion-button (click)="somardoze()" color="dark" expand="full">12</ion-button></ion-col>
     </ion-row>
   </ion-grid>
   <ion-grid>
@@ -30,10 +34,10 @@
     <ion-grid>
     <ion-row>
     <ion-col size="">
-      <ion-button color="dark">+</ion-button>
+      <ion-button (click)="botaosomatimeum()" color="dark">+</ion-button>
     </ion-col>
       <ion-col size="">
-        <ion-button color="dark">+</ion-button>
+        <ion-button (click)="botaosomatimedois()" color="dark">+</ion-button>
       </ion-col>
     </ion-row>
   </ion-grid>
@@ -50,10 +54,10 @@
   <ion-grid>
     <ion-row>
     <ion-col size="">
-      <ion-button color="dark">-</ion-button>
+      <ion-button (click)="botaosubtraitimeum()" color="dark">-</ion-button>
     </ion-col>
       <ion-col size="">
-        <ion-button color="dark">-</ion-button>
+        <ion-button (click)="botaosubtraitimedois()" color="dark">-</ion-button>
       </ion-col>
     </ion-row>
   </ion-grid>
@@ -70,7 +74,9 @@
         <ion-list>Time 1</ion-list>
       </ion-col>
       <ion-col>
-        <ion-button color="light">0</ion-button>
+        <ion-label>
+          0
+        </ion-label>
       </ion-col>
     </ion-row>
   </ion-grid>
@@ -80,7 +86,9 @@
         <ion-list>Time 2</ion-list>
       </ion-col>
       <ion-col>
-        <ion-button color="light">0</ion-button>
+        <ion-label>
+          0
+        </ion-label>
       </ion-col>
     </ion-row>
   </ion-grid>
@@ -91,6 +99,5 @@
       </ion-col>
     </ion-row>
   </ion-grid>
-
 
 </ion-content>
