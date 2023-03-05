@@ -10,6 +10,9 @@ export class Tab2Page {
   contando=1;
   pctimeum=0;
   pctimedois=0;
+  partidatimeum=0;
+  partidatimedois=0;
+
 
   constructor() {}
 
@@ -36,37 +39,45 @@ export class Tab2Page {
   botaosomatimeum () {
     this.pctimeum += this.contando
     this.contando = 1
+
+    if (this.pctimeum >= 12) {
+      this.partidatimeum +=1
+      this.pctimeum =0
+      this.pctimedois =0
+    }
   }
 
   botaosomatimedois () {
     this.pctimedois += this.contando
     this.contando = 1
+
+    if (this.pctimedois >= 12) {
+      this.partidatimedois +=1
+      this.pctimedois =0
+      this.pctimeum =0
+    }
   }
 
   botaosubtraitimeum () {
-    this.pctimeum -= this.contando
-    this.contando = 1
-
-    if (this.pctimeum <= 0) {
-      this.pctimeum = 0
+ 
+    if (this.pctimeum >0){
+      this.pctimeum -= this.contando
+      this.contando = 1
     }
   }
 
   botaosubtraitimedois () {
-    this.pctimedois -= this.contando
-    this.contando = 1
-
-    if (this.pctimedois <= 0) {
-      this.pctimedois = 0
+    if (this.pctimedois >0){
+      this.pctimedois -= this.contando
+      this.contando = 1
     }
   }
 
-  PlacarTime1() {
- 
-  }
+  zerarplacar () {
+    this.pctimeum = 0
+    this.pctimedois = 0
+    this.partidatimeum = 0
+    this.partidatimedois =0
 
-  PlacarTime2 () {
-    
   }
-
 }
