@@ -1,5 +1,7 @@
 import { animate, state, style, transition, trigger } from '@angular/animations';
 import { Component } from '@angular/core';
+import { Style } from '@capacitor/status-bar';
+import { Transform } from 'stream';
 
 @Component({
   selector: 'app-tab1',
